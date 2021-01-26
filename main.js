@@ -31,6 +31,12 @@ btn_menu.addEventListener('click', () => {
     icon_close.classList.toggle('on');
     
     nav_menu.classList.toggle('on');
+
+    if(icon_close.classList.contains('on')){
+        document.getElementById('menu').style.top = '70%';
+    } else {
+        document.getElementById('menu').style.top = '-100%';
+    }
 });
 
 //Obtener modo actual
