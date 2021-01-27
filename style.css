@@ -25,6 +25,7 @@ h1 {
 #menu {
     text-align: right;
     align-items: center;
+    position: "";
 }
 #menu li {
     display: inline-block;
@@ -225,13 +226,15 @@ body.dark-mode textarea::placeholder {
     #menu {
         position: fixed;
         width: 100%;
-        margin-top: -100%;
-        transition: all 1s ease;
+        margin-top: -260%;
+        transition: all 2s ease;
     }
 
     body.dark-mode #menu ul {
-        background-color: #3b4353;
+        background-color: var(--fondo-dark);
         color: white;
+        border-top: solid 2px white;
+        height: 83vh;
     }
 
     body.dark-mode #menu a {
@@ -241,14 +244,16 @@ body.dark-mode textarea::placeholder {
     #menu ul {
         flex-direction: column;
         width: 100%;
+        height: 83vh;
         padding-left: 0px;
         border-top: solid 2px black;
-        border-bottom: solid 2px black;
+        /*border-bottom: solid 2px black;*/
         background-color: white;
         z-index: 100;
         margin-left: -10px;
         padding-bottom: 2px;
         padding-top: 15px;
+        margin-top: auto;
     }
 
     #menu li  {
@@ -262,7 +267,9 @@ body.dark-mode textarea::placeholder {
         padding-left: initial;
     }
 
-    
+    body.dark-mode #menu li {
+        border-bottom: solid 2px white;
+    }
 
     #menu a {
         text-decoration: none;
